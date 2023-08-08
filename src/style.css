@@ -1,0 +1,855 @@
+/* PurchaseCard */
+.PurchaseCard {
+  min-height: 100vh;
+  background-color: #ccccbc;
+}
+
+.PurchaseCard-Container {
+  padding: 8rem 20rem 10rem;
+  background-color: #ccccbc;
+}
+
+.PurchaseCard-Container hr {
+  border: 2px solid #892121;
+  width: 30rem;
+  position: absolute;
+  right: 0;
+}
+
+.purchaseMenu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 30% 20%;
+      grid-template-columns: 50% 30% 20%;
+  background-color: #892121;
+  color: #ccccbc;
+  padding: 0 2rem;
+  border-radius: 2rem;
+}
+
+.purchaseMenu h1 {
+  font-size: 1.8rem;
+  margin: 1rem;
+}
+
+.purchaseMenu h2 {
+  font-size: 1.8rem;
+  margin: 1rem;
+  text-align: center;
+}
+
+.purchaseMenu h3 {
+  font-size: 1.8rem;
+  margin: 1rem;
+  text-align: end;
+}
+
+.PurchaseCardItem-SectionContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 30% 20%;
+      grid-template-columns: 50% 30% 20%;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: #58585f;
+}
+
+.PurchaseCardItem-SectionContainer h3 {
+  text-align: center;
+  font-size: 1.6rem;
+  padding: 0.8rem;
+  border: 1px solid #58585f;
+  min-width: 15px;
+  height: 25px;
+}
+
+.PurchaseCardItem-SectionContainer h4 {
+  text-align: end;
+  font-size: 1.8rem;
+}
+
+.PurchaseCardItem-SectionContainer h5 {
+  cursor: pointer;
+  margin: 0;
+  font-size: 1.4rem;
+  color: #892121;
+}
+
+.PurchaseCardItem-SectionContainer .PurchaseCard-countContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.PurchaseCardItem-RightContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: start;
+}
+
+.PurchaseCardItem-RightContainer img {
+  height: 8rem;
+  width: 7rem;
+  margin-right: 1rem;
+  border-radius: 2rem;
+}
+
+.PurchaseCardItem-RightContainer h1 {
+  margin-top: 0.1rem;
+  font-size: 1.7rem;
+}
+
+.PurchaseCardItem-RightContainer h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.PurchaseCard-TotalContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 30% 20%;
+      grid-template-columns: 50% 30% 20%;
+  color: #58585f;
+  margin-top: 3rem;
+}
+
+.PurchaseCard-TotalContainer h1 {
+  font-size: 2rem;
+  text-align: end;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  margin: 2rem;
+}
+
+.PurchaseCard-TotalContainer h2 {
+  font-size: 2rem;
+  margin: 2rem;
+  margin: 2rem;
+  text-align: end;
+}
+
+.PurchaseCard-TotalContainer h3 {
+  text-align: end;
+  font-size: 2rem;
+  margin: 2rem;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 2/1 / span 1 / span 2;
+}
+
+.PurchaseCard-TotalContainer h4 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: end;
+}
+
+.PurchaseCard-TotalContainer h5 {
+  text-align: end;
+  font-size: 2rem;
+  margin: 2rem;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: 3/1 / span 1 / span 2;
+}
+
+.PurchaseCard-TotalContainer h6 {
+  font-size: 2rem;
+  margin: 2rem;
+  text-align: end;
+}
+
+@media screen and (max-width: 1024px) {
+  .PurchaseCard-Container {
+    padding: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .PurchaseCard-Container {
+    padding: 5rem 5rem;
+  }
+  .purchaseMenu {
+    -ms-grid-columns: 50% 20% 30%;
+        grid-template-columns: 50% 20% 30%;
+  }
+  .purchaseMenu h1,
+  .purchaseMenu h2,
+  .purchaseMenu h3 {
+    font-size: 1.6rem;
+  }
+  .PurchaseCardItem-SectionContainer {
+    -ms-grid-columns: 50% 20% 30%;
+        grid-template-columns: 50% 20% 30%;
+    justify-items: center;
+  }
+  .PurchaseCardItem-SectionContainer h4 {
+    -ms-grid-column-align: end;
+        justify-self: end;
+    font-size: 1.6rem;
+  }
+  .PurchaseCardItem-SectionContainer .PurchaseCard-countContainer {
+    padding: 0;
+  }
+  .PurchaseCardItem-RightContainer h1 {
+    font-size: 1.4rem;
+  }
+  .PurchaseCardItem-RightContainer h2 {
+    font-size: 1.2rem;
+  }
+  .PurchaseCard-TotalContainer h2,
+  .PurchaseCard-TotalContainer h4,
+  .PurchaseCard-TotalContainer h6 {
+    text-align: start;
+    margin: 2rem 0;
+    font-size: 1.8rem;
+  }
+  .PurchaseCard-TotalContainer h1,
+  .PurchaseCard-TotalContainer h3,
+  .PurchaseCard-TotalContainer h5 {
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .PurchaseCard-Container {
+    padding: 5rem 1rem;
+  }
+  .PurchaseCardItem-SectionContainer h4 {
+    font-size: 1.4rem;
+  }
+  .PurchaseCardItem-SectionContainer h3 {
+    font-size: 1.4rem;
+    width: 5px;
+    height: 20px;
+  }
+  .PurchaseCardItem-SectionContainer h5 {
+    font-size: 1.2rem;
+  }
+  .PurchaseCardItem-RightContainer img {
+    width: 7rem;
+    height: 7rem;
+  }
+  .PurchaseCardItem-RightContainer h1 {
+    font-size: 1.2rem;
+  }
+  .PurchaseCardItem-RightContainer h2 {
+    font-size: 1rem;
+  }
+}
+
+.ContactSection1-Container {
+  background-color: #71997b;
+  padding: 5rem 10% 10rem;
+}
+
+.ContactSection1-Container h1 {
+  margin: 0;
+  text-align: center;
+  margin-bottom: 5rem;
+  font-family: "Shadows Into Light";
+}
+
+.ContactSection1-Container h2 {
+  margin-left: 1rem;
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: maroon;
+  text-align: start;
+}
+
+.ContactSection1-Container .IconForm-Container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto;
+      grid-template-columns: auto auto;
+  grid-gap: 15%;
+}
+
+.ContactSection1-Container i {
+  color: #245747;
+  font-size: 30rem;
+}
+
+.ContactSection1-Container form div {
+  height: 65px;
+  margin-bottom: 0.5rem;
+}
+
+.ContactSection1-Container input,
+.ContactSection1-Container textarea {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 100%;
+  min-height: 4rem;
+  padding: 1rem;
+  background-color: #71997b;
+  outline: none;
+  border: 2px solid #245747;
+  border-radius: 5rem;
+  font-size: 1.6rem;
+}
+
+.ContactSection1-Container input::-webkit-input-placeholder,
+.ContactSection1-Container textarea::-webkit-input-placeholder {
+  color: #4d4444;
+  font-size: 1.3rem;
+}
+
+.ContactSection1-Container input:-ms-input-placeholder,
+.ContactSection1-Container textarea:-ms-input-placeholder {
+  color: #4d4444;
+  font-size: 1.3rem;
+}
+
+.ContactSection1-Container input::-ms-input-placeholder,
+.ContactSection1-Container textarea::-ms-input-placeholder {
+  color: #4d4444;
+  font-size: 1.3rem;
+}
+
+.ContactSection1-Container input::placeholder,
+.ContactSection1-Container textarea::placeholder {
+  color: #4d4444;
+  font-size: 1.3rem;
+}
+
+.ContactSection1-Container form section {
+  height: 14rem;
+}
+
+.ContactSection1-Container .InputQ {
+  font-size: 1.8rem;
+  height: 10rem;
+  padding: 2rem 1rem;
+  border-radius: 2rem;
+}
+
+.ContactSection1-Container .submit {
+  background-color: #245747;
+  opacity: 0.9;
+}
+
+.ContactSection1-Container .submit:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .ContactSection1-Container {
+    padding: 5rem 13rem;
+  }
+  .ContactSection1-Container .IconForm-Container {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+    grid-gap: 5rem;
+    text-align: center;
+  }
+  .ContactSection1-Container h1 {
+    font-size: 2.5rem;
+  }
+  .ContactSection1-Container form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .ContactSection1-Container {
+    padding: 5rem 3rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .ContactSection1-Container i {
+    font-size: 20rem;
+  }
+  .ContactSection1-Container input,
+  .ContactSection1-Container textarea {
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .ContactSection1-Container h1 {
+    font-size: 2rem;
+  }
+}
+
+.About-Container {
+  background: #696159;
+  background: -webkit-gradient(linear, left top, right top, color-stop(22%, #696159), color-stop(49%, #71997b), color-stop(94%, #36b5a2));
+  background: linear-gradient(90deg, #696159 22%, #71997b 49%, #36b5a2 94%);
+  padding-bottom: 10rem;
+}
+
+.About-Container .AboutImage-Container {
+  max-height: 400px;
+  width: 50vw;
+  float: left;
+  margin-right: 4rem;
+  margin-bottom: 5rem;
+}
+
+.About-Container h1 {
+  color: #4d4444;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  margin-bottom: 50px;
+}
+
+.About-Container p {
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.5;
+  margin-bottom: 0;
+  font-size: 2.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  .About-Container .AboutImage-Container {
+    float: none;
+    width: 100%;
+    margin-right: 0;
+  }
+  .About-Container p {
+    margin-top: 2rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .About-Container p {
+    font-size: 1.6rem;
+  }
+}
+
+.Account-Container {
+  min-height: 100vh;
+}
+
+.AccountSection1-Container {
+  background-color: burlywood;
+  padding: 10rem 20rem;
+}
+
+.AccountSection1-Container p {
+  color: brown;
+  font-size: 1.1rem;
+  margin: 0;
+  margin-left: 1rem;
+  margin-top: 0.3rem;
+}
+
+.AccountSection1-Container form {
+  margin-top: 2rem;
+}
+
+.AccountSection1-Container form div {
+  height: 55px;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.AccountSection1-Container .AccountSection1-InnerContainer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+}
+
+.AccountSection1-Container img {
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.loginRegister-Container {
+  background-color: #d09c59;
+  border: 2px solid #892121;
+  border-radius: 5rem;
+  margin: 0 3rem;
+  height: 44rem;
+}
+
+.loginRegister-Container hr {
+  border: 2px solid #892121;
+  margin: 0;
+  width: 40%;
+  margin: 0 8%;
+  text-align: end;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
+}
+
+.loginRegister-Container .rollToLogin {
+  -webkit-transform: none;
+          transform: none;
+}
+
+.loginRegister-Container .rollToRegister {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  border: 2px solid #892121;
+  margin: 0;
+  width: 40%;
+  margin: 0 8%;
+  text-align: end;
+}
+
+.loginRegister-Menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginRegister-Menu h1,
+.loginRegister-Menu h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  width: 50%;
+  cursor: pointer;
+  font-family: Courier, monospace;
+}
+
+.login-Container,
+.register-Container {
+  -webkit-transition: 1s;
+  transition: 1s;
+  padding: 2rem 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.login-Container input,
+.login-Container button,
+.register-Container input,
+.register-Container button {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  padding: 1.2rem 1rem;
+  background-color: #892121;
+  border-radius: 5rem;
+}
+
+.login-Container button,
+.register-Container button {
+  margin-top: 2rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.6rem;
+  font-weight: lighter;
+}
+
+.login-Container h1 {
+  color: #892121;
+  margin-top: 4rem;
+  font-size: 1.4rem;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+@media screen and (max-width: 1024px) {
+  .Account-Container {
+    min-height: 50%;
+  }
+  .AccountSection1-Container {
+    padding: 5rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .AccountSection1-Container {
+    padding: 2rem 13rem 10rem;
+  }
+  .AccountSection1-Container .AccountSection1-InnerContainer {
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .loginRegister-Container {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .AccountSection1-Container {
+    padding: 3rem 0 8rem;
+  }
+  .login-Container,
+  .register-Container {
+    padding: 2rem 1rem;
+  }
+}
+
+.User-Container {
+  background-color: #d09c59;
+  padding: 5rem 1rem;
+}
+
+.User-Container h3 {
+  font-size: 2.6rem;
+}
+
+.User-Container h1 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.User-Container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0;
+}
+
+.User-Container div {
+  height: 78px;
+  padding: 0.2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: burlywood;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+.User-Container button {
+  height: 25px;
+  width: 50px;
+  display: inline;
+  background-color: #c4c4c4;
+  border: 0;
+  border-radius: 18px;
+}
+
+.User-Container button:hover {
+  background-color: #58585f;
+}
+
+.User-Container footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-top: 2rem;
+}
+
+.User-Container footer button {
+  width: 80px;
+  right: 0;
+}
+
+.User-Container footer button:hover {
+  background-color: #58585f;
+}
+
+@media screen and (min-width: 360px) {
+  .User-Container {
+    padding: 10rem 2rem;
+  }
+  .User-Container h3 {
+    font-size: 2.6rem;
+  }
+  .User-Container h1 {
+    font-size: 1.6rem;
+  }
+  .User-Container h2 {
+    font-size: 1.4rem;
+  }
+  .User-Container div {
+    padding: 1rem;
+  }
+  .User-Container button {
+    height: 32px;
+    width: 70px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  .User-Container {
+    padding: 10rem;
+  }
+  .User-Container h3 {
+    font-size: 2.6rem;
+  }
+  .User-Container h1 {
+    font-size: 1.8rem;
+  }
+  .User-Container h2 {
+    font-size: 1.6rem;
+  }
+  .User-Container footer {
+    margin-top: 5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .User-Container {
+    height: 80vh;
+  }
+}
+
+.float {
+  position: fixed;
+  top: 30%;
+  right: 50%;
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+  border-radius: 2rem;
+  overflow: hidden;
+  background-color: #58585f;
+}
+
+.float .editInput {
+  height: 5rem;
+}
+
+.float h6 {
+  font-size: 1rem;
+  margin: 0;
+  background-color: #58585f;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  color: maroon;
+}
+
+.float h1 {
+  font-size: 1.6rem;
+  margin: 0;
+  padding: 1rem;
+  background-color: #58585f;
+}
+
+.float input {
+  outline: none;
+  background-color: #d09c59;
+  border: 0;
+  padding: 1rem;
+  border: 5px solid #58585f;
+}
+
+.float form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.float form .editInputContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 6rem;
+  width: 25rem;
+}
+
+.float form .formBtnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #58585f;
+}
+
+.float form button {
+  padding: 0.8rem 1rem;
+  background-color: #c4c4c4;
+  border: 0;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+
+.float form .save:hover {
+  background-color: #d09c59;
+}
+
+.float form .cancel:hover {
+  background-color: #d09c59;
+}
+
+.float {
+  -webkit-animation: moved 1s;
+          animation: moved 1s;
+}
+
+@-webkit-keyframes moved {
+  0% {
+    top: 0;
+    max-height: 0;
+  }
+  50% {
+    top: 200px;
+    max-height: 100vh;
+  }
+}
+
+@keyframes moved {
+  0% {
+    top: 0;
+    max-height: 0;
+  }
+  50% {
+    top: 200px;
+    max-height: 100vh;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .float {
+    top: 18%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .float form .editInputContainer {
+    width: 15rem;
+  }
+}
+
+.ph-cancel:hover {
+  background-color: #892121;
+}
+
+.ph-next:hover {
+  background-color: #892121;
+}
+/*# sourceMappingURL=style.css.map */
